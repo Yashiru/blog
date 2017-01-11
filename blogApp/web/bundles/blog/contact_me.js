@@ -1,4 +1,12 @@
 // Contact Form Scripts
+$(document).ready(function() {
+  $(window).scroll(function() {
+    var top = -68 + $(window).scrollTop()/3.4;
+    var scroll = "0 "+top+"px";
+    $("header").css("backgroundPosition", scroll);
+    $("header").css("filter", "blur("+scroll/10+"px)");
+  });
+});
 
 $(function() {
 
